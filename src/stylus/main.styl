@@ -1,0 +1,77 @@
+@import 'nib'
+
+a
+	text-decoration none
+
+.section-inner
+	width 1280px
+	max-width 90%
+	margin 0 auto	
+	position relative
+
+// Шапка
+.navigation
+	width 100%
+	background #1d1d1d
+	
+.main-menu
+	margin 0
+	padding 0
+	list-style none
+	padding 20px
+	
+	li
+		display inline
+		position relative
+		transition-duration 0.3s
+		
+	a
+		font-family 'Open Sans', sans-serif
+		font-size 1.1em
+		color #999
+		padding 25px
+		
+		:hover
+			cursor pointer
+			color #fff
+		
+.slash:before
+	content "/"
+	display block
+	position absolute
+	right 0
+	top 50%
+	margin-top -9px
+	margin-right -24px
+	font-size 18px
+	color #444
+	font-weight 300
+	z-index 1000
+	
+.menu-social
+	position absolute
+	right 0
+	top 50%
+	margin-top -18px
+	list-style none
+	
+	li
+		float left
+		margin-left 10px
+		text-align center
+		
+		:hover
+				background #ca2017
+		
+		a
+			display block
+			width 36px
+			height 36px
+			background #333
+			color #fff
+			border-radius 999px
+			position relative
+			transition-duration 0.3s
+			
+			i
+				margin-top 9px
