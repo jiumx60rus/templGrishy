@@ -3,9 +3,6 @@ html
 	head
 		include ./includes/header.jade
 	body
-		#stars
-		#stars2
-		#stars3
 		.navigation: .section-inner
 			ul.main-menu
 				a(href="/"): li.slash Главная
@@ -19,9 +16,13 @@ html
 				li: a(href="/"): i.fa.fa-twitter
 				li: a(href="/"): i.fa.fa-youtube
 
+		canvas(id='star')
 
+		.title
+			.blog-title Grishy.ru
+			.blog-subtitle Блог о программировании
 
-		block content
+		//- block content
 
 	script(src="/assets/main.js")
 
