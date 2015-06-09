@@ -1,7 +1,8 @@
 @import 'nib'
 
-html
+body
 	font-family 'Open Sans', sans-serif
+	background #090a0f
 
 a
 	text-decoration none
@@ -81,8 +82,17 @@ a
 
 // Title
 #star
-	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)
+	background radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)
 	width 100%
+	position absolute
+	top 0
+	right 0
+	left 0
+	z-index -2
+
+#bgstar
+	height 700px
+	background linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(7,8,12,0.1) 80%,rgba(9,10,15,0.65) 100%)
 	position absolute
 	top 0
 	right 0
@@ -92,21 +102,25 @@ a
 .title
 	text-align center
 	padding 60px 0
-	color white
-	
-.blog-title > a
-	display inline-block
-	font-weight 900
-	font-size 3em
 	color #fff
-	text-decoration none
-	position relative
-	text-shadow 1px 1px 3px rgba(0,0,0,0.1)
+	
+.blog-title
+	a
+		font-weight 900
+		font-size 3em
+		color #fff
+		transition-duration 0.3s
+
+.blog-subtitle
+	font-size 1.3em
+
 // Title end
 
+// content
 
 
 .post
 	background white
 	margin-top 40px
-	
+
+// end content
