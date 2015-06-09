@@ -1,15 +1,9 @@
-article.post(role="article").section-inner
-	-if(Math.random() >= .5)
-		a(href="/page.html#top"): img(src="/assets/img/post0.jpg")
-	-else
-		a(href="/page.html#top"): img(src="/assets/img/post1.jpg")
+article.post(role="article")
+	a(href="/page.html#top"): img(src="/assets/img/post0.jpg")
 	
 	.entryBox
 		header.entryHeader
-			-if(Math.random() >= .5)
-				a(href="/page.html#top"): h1 Another Impressive Day
-			-else
-				a(href="/page.html#top"): h1 Another Impressive Day Another Day very long :)
+			a(href="/page.html#top"): h1 Another Impressive Day
 			.entryMeta
 				time(datetime="2014-12-22") 22 December 2014
 
