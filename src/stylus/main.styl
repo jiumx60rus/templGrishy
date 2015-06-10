@@ -20,9 +20,9 @@ a
 	
 .main-menu
 	margin 0
-	padding 0
 	list-style none
 	padding 20px
+	padding-left 0
 	
 	li
 		display inline
@@ -31,7 +31,7 @@ a
 		
 	a
 		font-size 1.1em
-		color #999
+		color #C5C5C5
 		padding 25px
 		
 		:hover
@@ -60,7 +60,8 @@ a
 	
 	li
 		float left
-		margin-left 10px
+		margin-left 5px
+		margin-right 5px
 		text-align center
 		
 		:hover
@@ -92,7 +93,8 @@ a
 
 #bgstar
 	width 100%
-	height 100% //canvas.height = $(window).height()
+	// Двигается вместе с экраном на планшете
+	// height 100% //canvas.height = $(window).height()
 	background linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(7,8,12,0.1) 80%,rgba(9,10,15,1) 100%)
 	position absolute
 	top 0
@@ -113,6 +115,9 @@ a
 
 .blog-subtitle
 	font-size 1.3em
+	
+	@media all and (max-width: 500px)
+		display none
 
 // Title end
 
@@ -122,9 +127,70 @@ a
 	background #fff
 	width 48%
 	float left
+	border-bottom-right-radius 3px
+	border-bottom-left-radius 3px
 	img
 		width 100%
+		
+	a:hover
+		img
+			transform translateZ(0)
+			transition-duration 0.3s
+			-webkit-filter brightness(.8)
+			
+	@media all and (max-width: 900px)
+		width 98%
+			
+.entryHeader
+	h1
+		margin 0
+		color: #222;
+		font-size: 1.6em;
+		line-height: 120%;
+		font-weight: 700;
+		
+		@media all and (max-width: 500px)
+			font-size: 1.2em;
+		
+	:hover
+		transition-duration 0.3s
+		color: #676767
+  
 .entryBox
 	padding 4%
+	padding-top 0
+	padding-bottom 1%
+	
+// .entryMeta
+// 	border-top: 2px solid #eee;
+// 	margin-top 10px
+// 	padding-top 10px
+	
+// 	a
+// 		margin-left 5px
+// 		font-size .9em
+// 		padding 2px
+// 		color #222;
+// 		text-transform uppercase
+// 		border-radius: 3px;
+// 		background: #EBEBEB
+
+// .entryMeta a:hover
+// 	transition-duration 0.3s
+// 	background: #DBDBDB
+
+.category
+	position relative
+	top -36px
+	background rgba(9, 10, 15, 0.7)
+	padding 10px 15px
+	color white
+	font-size 14px
+	font-weight 600
+	text-transform uppercase
+	
+.category:hover
+	transition-duration 0.3s
+	background rgba(9, 10, 15, 1)
 	
 // end content

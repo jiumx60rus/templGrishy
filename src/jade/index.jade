@@ -1,36 +1,5 @@
 extends ./layout.jade
 
 block content
-	article.post(role="article")
-		a(href="/page.html#top"): img(src="/assets/img/post0.jpg")
-		
-		.entryBox
-			header.entryHeader
-				a(href="/page.html#top"): h1 1
-				.entryMeta
-					time(datetime="2014-12-22") 22 December 2014
-
-			.entryContent
-				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas omnis officia nesciunt, dignissimos rerum reiciendis culpa eveniet consectetur dicta magni inventore sequi molestiae ipsa illum doloremque quos eos harum cupiditate. Quae vel aperiam maiores beatae consequuntur ab cupiditate. At nesciunt perferendis pariatur, labore error iure corporis quas voluptatibus necessitatibus vitae aut nam perspiciatis dolorem unde soluta optio quibusdam odio earum est eum asperiores molestias dolor. Ullam, explicabo aliquam quaerat, porro reprehenderit temporibus velit obcaecati asperiores saepe eius aut ad ipsa.
-					
-			.entryReadMore
-				a(href="/page.html#top") Читать дальше
-
-	article.post(role="article")
-		a(href="/page.html#top"): img(src="/assets/img/post0.jpg")
-		
-		.entryBox
-			header.entryHeader
-				a(href="/page.html#top"): h1 2
-				.entryMeta
-					time(datetime="2014-12-22") 22 December 2014
-
-			.entryContent
-				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas omnis officia nesciunt, dignissimos rerum reiciendis culpa eveniet consectetur dicta magni inventore sequi molestiae ipsa illum doloremque quos eos harum cupiditate. Quae vel aperiam maiores beatae consequuntur ab cupiditate. At nesciunt perferendis pariatur, labore error iure corporis quas voluptatibus necessitatibus vitae aut nam perspiciatis dolorem unde soluta optio quibusdam odio earum est eum asperiores molestias dolor. Ullam, explicabo aliquam quaerat, porro reprehenderit temporibus velit obcaecati asperiores saepe eius aut ad ipsa.
-					
-			.entryReadMore
-				a(href="/page.html#top") Читать дальше
-
-
-	-for(var x = 8;x--;)
+	-for(var x = 6;x--;)
 		include ./includes/post.jade
