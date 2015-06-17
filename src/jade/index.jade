@@ -1,5 +1,58 @@
-extends ./layout.jade
+doctype html
+html
+	head
+		title  Lorem ipsum dolor.
 
-block content
-	-for(var x = 6;x--;)
-		include ./includes/post.jade
+		meta(charset="utf-8")
+		meta(meta name="viewport" content="width=device-width, initial-scale=1")
+
+		link(href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
+		link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css")
+
+		link(href="/assets/style.css", rel="stylesheet")
+	body
+		.navigation: .section-inner
+			ul.main-menu
+				a(href="/"): li.slash Главная
+				a(href="/"): li.slash Проекты
+				a(href="/"): li.slash О сайте
+				a(href="/"): li RSS
+			
+			ul.menu-social
+				li: a(href="/"): i.fa.fa-vk
+				li: a(href="/"): i.fa.fa-facebook
+				li: a(href="/"): i.fa.fa-twitter
+				li: a(href="/"): i.fa.fa-youtube
+
+		canvas(id='star')
+		#bgstar
+
+		.title.section-inner
+			.blog-title: a(href="/") Grishy.ru
+			.blog-subtitle Блог о программировании
+
+		.wrapper.section-inner 
+			-for(var x = 6;x--;)
+
+				article.post(role="article")
+					a(href="/page.html")
+						img(src="/assets/img/post0.jpg")
+					
+					.entryBox
+						header.entryHeader
+							a(href="/page.html"): h1 Игра, в которой требуется вытаскивать шарики из кувшина. Забравший последний шарик — победитель. Нужно определить лучшую стратегию
+
+						.entryContent
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsa, modi excepturi distinctio at quam. Blanditiis officia reiciendis, tempora, harum facilis earum. Voluptatibus culpa dignissimos ex vitae reprehenderit odio, maiores ea quidem aperiam maxime at reiciendis tempore, eius similique minima illo et eveniet, ratione commodi magni corrupti. Ipsum, corporis, ea? Voluptas possimus praesentium maiores molestias ad ullam, totam debitis deserunt aliquid blanditiis, voluptatibus impedit assumenda reprehenderit repudiandae aliquam eius, quo officia iste nam. Ad iure qui assumenda doloribus ullam. Doloremque autem ratione aspernatur. Laboriosam molestiae, voluptate! Tempore quas cum quisquam optio, mollitia! Incidunt qui deleniti nisi minus? Excepturi, iste, officiis.
+						
+						.entryMeta
+							i.fa.fa-clock-o
+							time(datetime="2014-12-22") 22 December 2014
+
+							a(href="/page.html") Читать дальше →
+					
+	script(src="/assets/main.js")
+	script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js")
+
+
+	script(src="//localhost:35729/livereload.js")

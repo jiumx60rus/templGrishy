@@ -28,6 +28,7 @@ module.exports = (grunt) ->
     connect:
       server:
         options:
+          hostname: "localhost"
           port: 3000
           base: "dest"
 
