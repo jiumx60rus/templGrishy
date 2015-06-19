@@ -1,9 +1,10 @@
+var h;
 $(document).ready(function() {
     var canvas = document.getElementById('star');
     var ctx = canvas.getContext("2d");
 
     canvas.width = $(window).width();
-    canvas.height = $("#title").outerHeight() + 15; // + отступы
+    canvas.height = $("#title").outerHeight(); // + отступы
 
 
     var img1 = new Image();
@@ -58,9 +59,9 @@ $(document).ready(function() {
 
 $(window).resize(function() {
     var canvas = document.getElementById('star');
+    var h = canvas.width * 9 / 16;
     canvas.width = $(window).width();
-    canvas.height = $("#title").outerHeight()+1;
-    console.log($("#title").outerHeight());
+    canvas.height = $("#title").outerHeight() + 1;
 
     $("#bgstar").height(canvas.height);
 });

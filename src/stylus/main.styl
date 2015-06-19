@@ -49,6 +49,8 @@ a
 #navigation
 	width 100%
 	background #1d1d1d
+	position relative
+	top -15px
 	
 #main-menu
 	margin 0
@@ -60,16 +62,49 @@ a
 		display inline
 		position relative
 		padding 20px
+		padding-right 30px
 		
 	a
-		font-size 1.1em
+		font-size 1em
+		font-weight: 700;
 		color #C5C5C5
+		text-transform: uppercase;
+		letter-spacing: 1px;
 		transition-duration 0.3s
 		
 	li:hover
 		a
 			cursor pointer
 			color #fff
+			
+#menu-social
+	position absolute
+	right 0
+	top 50%
+	margin-top -18px
+	list-style none
+	
+	li
+		float left
+		margin-left 5px
+		margin-right 5px
+		text-align center
+		
+		:hover
+				background #ca2017
+		
+		a
+			display block
+			width 36px
+			height 36px
+			background #333
+			color #fff
+			border-radius 999px
+			position relative
+			transition-duration 0.3s
+			
+			i
+				margin-top 9px
 
 .slash:before
 	content "/"
@@ -77,17 +112,18 @@ a
 	position absolute
 	right 0
 	top 50%
-	margin-top -9px
-	margin-right -24px
-	font-size 18px
+	margin-top -0.7em
+	// margin-right -24px
+	font-size 1.4em
 	color #444
 	font-weight 300
 	z-index 1000
 
 // end Navigation
 
-// Navigation
-// end Navigation
+// content
+
+// end content
 
 // Navigation
 // end Navigation
